@@ -12,9 +12,10 @@
 
      <div class="contanier">
            <section> 
-                  <div class="card-header">
-                    <h1>Verification is Pending</h1>
-                  </div>
+             <div class="card-header">
+                <h1 class="text-center">Account verified now</h1>
+                <h5 class="text-center">Now you can login into our admin portal</h5>
+             </div>
            </section>
      </div>
 

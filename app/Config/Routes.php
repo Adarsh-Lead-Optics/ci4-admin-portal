@@ -12,6 +12,10 @@ use CodeIgniter\Router\RouteCollection;
 // $routes->get('/', 'Home::mysession');
 
 
-$routes->get('/','register::index');
-// $routes->get(from:'register', to:'register::userregister');
-// $routes->get(from:'user', to:'user::user-login');
+$routes->get('/','register::index'); 
+// $routes->get('/verify/(:any)', 'Register::verify');
+$routes->get('/verify/(:any)', 'Register::activate/$1');
+// $routes->get('/verify/(:any)', 'Home::authenticateUserPage/$1');
+
+
+// $routes->get(from:'user', to:'user::user-login'); 

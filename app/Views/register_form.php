@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to CodeIgniter 4!</title>
+    <title>User Registration from </title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -33,8 +33,12 @@
             <h1>User Registration</h1>
         </div>
     </header>  
-    <section>
-
+    <?php 
+       if(isset($message) && !empty($message)):
+          echo $message; 
+    ?>
+    <?php endif ?>
+    <section> 
         <div class="contanier pt-5 pb-5"> 
             <?php echo form_open('register/newuser', ['id' => 'myForm', 'class' => 'row g-3 w-75 m-auto']); ?>
             <!-- <form id="myForm" class="row g-3 w-75 m-auto">  -->
